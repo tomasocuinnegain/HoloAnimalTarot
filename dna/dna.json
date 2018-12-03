@@ -1,0 +1,65 @@
+{
+  "Version": 1,
+  "UUID": "d6ad4263-e238-4a90-a4c5-3e9a95e864d2",
+  "Name": "HoloTarot",
+  "Properties": {
+    "description": "Tarot Card App",
+    "language": "en"
+  },
+  "PropertiesSchemaFile": "properties_schema.json",
+  "DHTConfig": {
+    "HashType": "sha2-256"
+  },
+  "Zomes": [
+    {
+      "Name": "AnimalTarot",
+      "Description": "Maintain list of tarot cards and descriptions",
+      "RibosomeType": "js",
+      "CodeFile": "animaltarot.js",
+      "Entries": [
+        {
+          "Name": "Card",
+          "Required": true,
+          "DataFormat": "json",
+          "Sharing": "public",
+          "SchemaFile": "Card.json"
+        }
+      ],
+      "Functions": [
+        {
+          "Name": "CardCreate",
+          "CallingType": "json",
+          "Exposure": "public"
+        },
+        {
+          "Name": "CardRead",
+          "CallingType": "json",
+          "Exposure": "public"
+        },
+        {
+          "Name": "CardUpdate",
+          "CallingType": "json",
+          "Exposure": "public"
+        },
+        {
+          "Name": "CardDelete",
+          "CallingType": "json",
+          "Exposure": "public"
+        },
+        {
+          "Name": "pick_card",
+          "CallingType": "json",
+          "Exposure": ""
+        }
+      ]
+    },
+    {
+      "Name": "",
+      "Description": "",
+      "RibosomeType": "js",
+      "CodeFile": ".js",
+      "Entries": [],
+      "Functions": []
+    }
+  ]
+}

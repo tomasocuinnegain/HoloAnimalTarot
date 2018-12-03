@@ -1,0 +1,45 @@
+{
+  "Tests": [
+    {
+      "Convey": "auto-generated test for CardCreate",
+      "Zome": "AnimalTarot",
+      "FnName": "CardCreate",
+      "Input": {
+        "name": "Parrot",
+        "description": "parrots talk"
+      },
+      "Output": "%h%"
+    },
+    {
+      "Convey": "auto-generated test for CardRead",
+      "Zome": "AnimalTarot",
+      "FnName": "CardRead",
+      "Input": "%h%",
+      "Output": {
+        "name": "Parrot",
+        "description": "parrots talk"
+      }
+    },
+    {
+      "Convey": "auto-generated test for CardUpdate",
+      "Zome": "AnimalTarot",
+      "FnName": "CardUpdate",
+      "Input": "%h%",
+      "Output": "%h%"
+    },
+    {
+      "Convey": "auto-generated test for CardDelete",
+      "Zome": "AnimalTarot",
+      "FnName": "CardDelete",
+      "Input": "%h%",
+      "Output": "%h%"
+    },
+    {
+      "Convey": "auto-generated test for pick_card",
+      "Zome": "AnimalTarot",
+      "FnName": "pick_card",
+      "Input": "",
+      "Output": {}
+    }
+  ]
+}
